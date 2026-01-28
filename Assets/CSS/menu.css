@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    background: #fff0f3;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #ff4d6d;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin-top: 40px;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.nivel {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px dashed #ff4d6d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.nivel:hover {
+    transform: translateX(10px);
+    background: #ffccd5;
+}
+
+.nivel.bloqueado {
+    opacity: 0.6;
+    cursor: not-allowed;
+    border-color: #ccc;
+}
+
+.numero {
+    background: #ff4d6d;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.info {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.estado { font-size: 0.8rem; font-weight: bold; color: #ff4d6d; }

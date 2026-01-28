@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffafbd 0%, #ffc3a0 100%);
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    touch-action: none; /* Evita zoom accidental en móviles */
+}
+
+.contenedor {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 85%;
+    max-width: 350px;
+    border: 3px solid #ff4d6d;
+    z-index: 10;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #ff4d6d;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100px;
+}
+
+.btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#btnSi {
+    background-color: #ff4d6d;
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 77, 109, 0.4);
+}
+
+#btnSi:hover {
+    transform: scale(1.1);
+}
+
+#btnNo {
+    background-color: #777;
+    color: white;
+    position: absolute; /* Esto permite que "escape" */
+    z-index: 999;
+}
+
+/* Estilo para las flores decorativas */
+.decoracion {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.6;
+    pointer-events: none;
+}

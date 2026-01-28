@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Atrapa el Amor ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/CSS/test3.css">
+    <link rel="stylesheet" href="Assets/CSS/responsive.css">
+ 
+</head>
+<body>
+
+    <div id="game-container">
+        <div id="hud">
+            <div>Puntos: <span id="puntos">0</span>/10</div>
+            <div>Vidas: <span id="vidas">❤️❤️❤️</span></div>
+        </div>
+        
+        <div id="jugador">🧺</div>
+
+        <div id="mensaje-perder" class="mensaje-pantalla">
+            <h2 id="titulo-error">¡OH NO! 😱</h2>
+            <p id="texto-error">Se te escapó mucho amor...</p>
+            <button onclick="location.reload()">Reintentar</button>
+        </div>
+
+        <div id="mensaje-ganar" class="mensaje-pantalla">
+            <h2>¡NIVEL COMPLETADO! 🏆</h2>
+            <p>¡Eres experta atrapando mi amor!</p>
+            <p>Siguiente desafío: <b>El Laberinto</b></p>
+            <button onclick="window.location.href='final.html'">IR AL LABERINTO</button>
+        </div>
+    </div>
+
+<script src="Assets/JS/test3.js"></script>
+</body>
+</html>

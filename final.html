@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Laberinto Final ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/CSS/final.css">
+    <link rel="stylesheet" href="Assets/CSS/responsive.css">
+</head>
+<body>
+
+    <div id="hud">
+        <span>Meta: 💌</span>
+        <span class="vidas">Vidas: <span id="vidas-count">❤️❤️❤️</span></span>
+    </div>
+
+    <div id="maze-container">
+        <div id="player" class="player">👧🏻</div>
+    </div>
+
+    <div class="controls">
+        <button id="up" class="control-btn" style="grid-area: up;">⬆️</button>
+        <button id="left" class="control-btn" style="grid-area: left;">⬅️</button>
+        <button id="right" class="control-btn" style="grid-area: right;">➡️</button>
+        <button id="down" class="control-btn" style="grid-area: down;">⬇️</button>
+    </div>
+
+    <div id="final-message">
+        <h2>¡LO LOGRASTE! ❤️</h2>
+        <p>Tu recompensa se está descargando...</p>
+        <button onclick="location.reload()" style="background:#ff4d6d; color:white; border:none; padding:10px; border-radius:10px;">Jugar de nuevo</button>
+    </div>
+
+    <div id="game-over">
+        <h2>¡OH NO! 😱</h2>
+        <p>Te quedaste sin vidas... ¡Pero no te rindas!</p>
+        <button onclick="location.reload()" style="background:#ff4d6d; color:white; border:none; padding:10px; border-radius:10px;">Reintentar Nivel</button>
+    </div>
+
+   <script src="Assets/JS/final.js"></script>
+</body>
+</html>
