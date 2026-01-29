@@ -134,7 +134,7 @@ function actualizarPos() {
 function descargarCarta() {
     const link = document.createElement('a');
     // Debe ser el nombre exacto que aparece en tu carpeta de archivos
-    link.href = 'Felices 19 amada mia.pdf'; 
+    link.href = 'Felices19amadamia.pdf'; 
     link.download = 'Para_Mi_Amor.pdf'; // Este es el nombre que ella verá al descargar
     document.body.appendChild(link);
     link.click();
@@ -149,4 +149,5 @@ function descargarCarta() {
 
         
         initMaze();
+
 
